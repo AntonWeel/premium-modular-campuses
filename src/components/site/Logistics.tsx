@@ -13,8 +13,8 @@ const CHAIN = [
 
 const SHOTS = [
   {
-    src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/83f9790e-a5c9-4c01-86b1-a8f5b12fc77f.jpg',
-    alt: 'Road transport of modules',
+    src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/528f3b1f-6fe2-4387-9466-0c824cedf2b9.jpg',
+    alt: 'Modules in transport frames',
   },
   {
     src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/a9818d88-c76e-4490-976a-91636a9633ad.jpg',
