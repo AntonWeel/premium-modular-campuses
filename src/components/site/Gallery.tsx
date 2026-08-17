@@ -71,7 +71,7 @@ const Gallery = () => {
               key={c}
               type="button"
               onClick={() => setCat(c)}
-              className={`rounded-sm border px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.16em] transition-all duration-300 ${
+              className={`rounded-full border px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.16em] transition-all duration-300 ${
                 c === cat
                   ? 'border-primary text-primary'
                   : 'border-border text-muted-foreground hover:border-primary/60 hover:text-foreground'
@@ -83,13 +83,13 @@ const Gallery = () => {
         </div>
       }
     >
-      <div ref={ref} className={`${className} grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3`}>
+      <div ref={ref} className={`${className} grid gap-5 sm:grid-cols-2 lg:grid-cols-3`}>
         {list.map((item) => (
           <button
             key={item.title + item.src}
             type="button"
             onClick={() => setOpen(ITEMS.indexOf(item))}
-            className="group relative aspect-[4/3] overflow-hidden bg-background text-left"
+            className="group relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-border bg-background text-left transition-colors duration-300 hover:border-primary/50"
           >
             <img
               src={item.src}
@@ -115,7 +115,7 @@ const Gallery = () => {
       </div>
 
       <Dialog open={open !== null} onOpenChange={(v) => !v && setOpen(null)}>
-        <DialogContent className="max-w-4xl border-border bg-card p-0">
+        <DialogContent className="max-w-4xl overflow-hidden rounded-[2rem] border-border bg-card p-0">
           {open !== null && (
             <div>
               <img src={ITEMS[open].src} alt={ITEMS[open].title} className="w-full object-cover" />

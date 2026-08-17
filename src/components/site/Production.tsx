@@ -58,13 +58,13 @@ const Production = () => {
       headerRight={<GoldButton href="#contacts" ghost>Book a plant tour</GoldButton>}
     >
       <div ref={ref} className={className}>
-        <div className="grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {CARDS.map((c, i) => (
             <button
               key={c.title}
               type="button"
               onClick={() => setOpen(i)}
-              className="group relative aspect-[4/5] overflow-hidden bg-background text-left"
+              className="group relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-border bg-background text-left transition-colors duration-300 hover:border-primary/50"
             >
               <img
                 src={c.image}
@@ -83,9 +83,9 @@ const Production = () => {
           ))}
         </div>
 
-        <div className="mt-px grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {SPECS.map((s) => (
-            <div key={s.label} className="bg-background p-8">
+            <div key={s.label} className="sand-panel p-8">
               <p className="font-head text-2xl font-extrabold tracking-tight text-primary lg:text-3xl">
                 {s.value}
               </p>
@@ -98,7 +98,7 @@ const Production = () => {
       </div>
 
       <Dialog open={open !== null} onOpenChange={(v) => !v && setOpen(null)}>
-        <DialogContent className="max-w-4xl border-border bg-card p-0">
+        <DialogContent className="max-w-4xl overflow-hidden rounded-[2rem] border-border bg-card p-0">
           {open !== null && (
             <div>
               <img src={CARDS[open].image} alt={CARDS[open].title} className="w-full object-cover" />

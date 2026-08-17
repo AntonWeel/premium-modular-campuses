@@ -40,7 +40,7 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
 ];
 
 const Footer = () => (
-  <footer className="border-t border-border bg-card">
+  <footer className="dune-field border-t border-border bg-card">
     <div className="mx-auto w-full max-w-[1360px] px-6 py-16 md:px-10 lg:px-16">
       <div className="grid gap-12 lg:grid-cols-[1.3fr_repeat(3,1fr)]">
         <div>
@@ -54,7 +54,7 @@ const Footer = () => (
                 key={s}
                 href="#top"
                 aria-label={s}
-                className="flex h-10 w-10 items-center justify-center rounded-sm border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
               >
                 <Icon name={s} size={16} />
               </a>

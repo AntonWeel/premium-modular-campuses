@@ -50,11 +50,11 @@ const Advantages = () => {
       }
       lead="We own the full cycle — from site layout studies to handing over a fully occupied turnkey camp."
     >
-      <div ref={ref} className={`${className} grid gap-px overflow-hidden border border-border bg-border sm:grid-cols-2 lg:grid-cols-3`}>
+      <div ref={ref} className={`${className} grid gap-5 sm:grid-cols-2 lg:grid-cols-3`}>
         {ITEMS.map((it, i) => (
           <article
             key={it.title}
-            className="group relative bg-card p-8 transition-colors duration-300 hover:bg-background lg:p-10"
+            className="sand-panel group relative p-8 transition-all duration-300 hover:border-primary/50 lg:p-10"
             style={{ transitionDelay: `${i * 40}ms` }}
           >
             <span className="absolute right-8 top-8 font-head text-[0.7rem] tracking-[0.2em] text-muted-foreground/50">
@@ -67,7 +67,7 @@ const Advantages = () => {
             />
             <h3 className="mt-7 font-head text-xl font-bold tracking-tight">{it.title}</h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{it.text}</p>
-            <span className="mt-7 block h-px w-10 bg-primary transition-all duration-500 group-hover:w-20" />
+            <span className="mt-7 block h-px w-10 rounded-full bg-primary transition-all duration-500 group-hover:w-20" />
           </article>
         ))}
       </div>

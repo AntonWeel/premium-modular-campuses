@@ -64,16 +64,16 @@ const Geography = () => {
       }
       lead="25+ countries, local installation contractors and service teams close to your site."
     >
-      <div ref={ref} className={`${className} grid gap-px border border-border bg-border lg:grid-cols-[1fr_1.2fr]`}>
-        <div className="bg-card">
+      <div ref={ref} className={`${className} grid gap-5 lg:grid-cols-[1fr_1.2fr]`}>
+        <div className="sand-panel overflow-hidden">
           {REGIONS.map((r, i) => (
             <button
               key={r.name}
               type="button"
               onMouseEnter={() => setActive(i)}
               onClick={() => setActive(i)}
-              className={`block w-full border-b border-border px-8 py-7 text-left transition-colors duration-300 last:border-b-0 ${
-                i === active ? 'bg-background' : 'hover:bg-background/50'
+              className={`block w-full border-b border-border/60 px-8 py-7 text-left transition-colors duration-300 last:border-b-0 ${
+                i === active ? 'bg-background/70' : 'hover:bg-background/40'
               }`}
             >
               <div className="flex items-center justify-between gap-4">
@@ -93,7 +93,7 @@ const Geography = () => {
           ))}
         </div>
 
-        <div className="relative min-h-[340px] overflow-hidden bg-background p-8 lg:min-h-[460px]">
+        <div className="dune-field relative min-h-[340px] overflow-hidden rounded-[2rem] border border-border bg-background p-8 lg:min-h-[460px]">
           <div
             className="absolute inset-0 opacity-[0.14]"
             style={{

@@ -22,8 +22,8 @@ const GoldButton = ({
   type = 'button',
   disabled,
 }: GoldButtonProps) => {
-  const base = `inline-flex items-center justify-center gap-3 rounded-sm font-semibold uppercase tracking-[0.14em] transition-all duration-300 hover:-translate-y-px ${
-    small ? 'px-[18px] py-[11px] text-[0.7rem]' : 'px-[22px] py-[14px] text-[0.78rem]'
+  const base = `inline-flex items-center justify-center gap-3 rounded-full font-semibold uppercase tracking-[0.14em] transition-all duration-300 hover:-translate-y-px ${
+    small ? 'px-[22px] py-[11px] text-[0.7rem]' : 'px-[28px] py-[14px] text-[0.78rem]'
   } ${
     ghost
       ? 'border border-border bg-transparent text-foreground hover:border-primary hover:text-primary'

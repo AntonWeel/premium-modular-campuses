@@ -43,7 +43,7 @@ const Process = () => {
                 className="group flex flex-col items-center text-center"
               >
                 <span
-                  className={`flex h-[52px] w-[52px] items-center justify-center rounded-sm border transition-all duration-300 ${
+                  className={`flex h-[52px] w-[52px] items-center justify-center rounded-full border transition-all duration-300 ${
                     i === active
                       ? 'border-primary bg-primary text-primary-foreground'
                       : 'border-border bg-card text-primary group-hover:border-primary'
@@ -63,13 +63,13 @@ const Process = () => {
           </div>
         </div>
 
-        <div className="hidden border border-border bg-card p-8 md:block lg:p-12">
+        <div className="sand-panel hidden p-8 md:block lg:p-12">
           <div className="flex flex-wrap items-baseline gap-6">
             <p className="font-head text-[0.75rem] uppercase tracking-[0.3em] text-primary">
               Step {String(active + 1).padStart(2, '0')}
             </p>
             <h3 className="font-head text-3xl font-extrabold tracking-tight">{STEPS[active].title}</h3>
-            <span className="rounded-sm border border-border px-3 py-1 text-[0.68rem] uppercase tracking-[0.16em] text-muted-foreground">
+            <span className="rounded-full border border-border px-3 py-1 text-[0.68rem] uppercase tracking-[0.16em] text-muted-foreground">
               {STEPS[active].term}
             </span>
           </div>
@@ -78,9 +78,9 @@ const Process = () => {
           </p>
         </div>
 
-        <div className="space-y-px bg-border md:hidden">
+        <div className="space-y-4 md:hidden">
           {STEPS.map((s, i) => (
-            <div key={s.title} className="bg-card p-6">
+            <div key={s.title} className="sand-panel p-6">
               <div className="flex items-center gap-4">
                 <Icon name={s.icon} size={22} className="flex-none text-primary" />
                 <h3 className="font-head text-lg font-bold">{s.title}</h3>

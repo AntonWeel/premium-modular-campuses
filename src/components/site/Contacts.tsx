@@ -95,7 +95,7 @@ const Contacts = () => {
   };
 
   const fieldCls = (key: keyof FormState) =>
-    `h-12 rounded-sm border bg-background/70 px-4 text-sm placeholder:text-muted-foreground/70 focus-visible:ring-primary ${
+    `h-12 rounded-full border bg-background/70 px-5 text-sm placeholder:text-muted-foreground/70 focus-visible:ring-primary ${
       errors[key] ? 'border-destructive' : 'border-border'
     }`;
 
@@ -128,7 +128,7 @@ const Contacts = () => {
                 { icon: 'MapPin', text: 'Dubai, UAE · Astana · Tyumen' },
               ].map((c) => (
                 <div key={c.text} className="flex items-center gap-4">
-                  <span className="flex h-11 w-11 flex-none items-center justify-center rounded-sm border border-border bg-card/60 text-primary">
+                  <span className="flex h-11 w-11 flex-none items-center justify-center rounded-full border border-border bg-card/60 text-primary">
                     <Icon name={c.icon} size={18} />
                   </span>
                   {c.href ? (
@@ -143,7 +143,7 @@ const Contacts = () => {
             </div>
           </div>
 
-          <div className="border border-border bg-card/85 p-8 backdrop-blur-sm lg:p-10">
+          <div className="rounded-[2.5rem] border border-border bg-card/85 p-8 backdrop-blur-sm lg:p-10">
             {sent ? (
               <div className="flex min-h-[420px] flex-col items-start justify-center">
                 <span className="flex h-14 w-14 items-center justify-center rounded-full border border-primary text-primary">
@@ -247,7 +247,7 @@ const Contacts = () => {
                   placeholder="Tell us about the project: industry, timeline, site"
                   value={form.message}
                   onChange={(e) => set('message', e.target.value)}
-                  className="min-h-[120px] rounded-sm border-border bg-background/70 px-4 py-3 text-sm placeholder:text-muted-foreground/70 focus-visible:ring-primary"
+                  className="min-h-[120px] rounded-[1.5rem] border-border bg-background/70 px-5 py-4 text-sm placeholder:text-muted-foreground/70 focus-visible:ring-primary"
                 />
 
                 <div className="flex flex-wrap items-center gap-5 pt-2">

@@ -88,7 +88,7 @@ const Solutions = () => {
               key={c.key}
               type="button"
               onClick={() => setActive(i)}
-              className={`rounded-sm border px-6 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.16em] transition-all duration-300 ${
+              className={`rounded-full border px-6 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.16em] transition-all duration-300 ${
                 i === active
                   ? 'border-primary bg-primary text-primary-foreground'
                   : 'border-border text-muted-foreground hover:border-primary hover:text-foreground'
@@ -99,8 +99,8 @@ const Solutions = () => {
           ))}
         </div>
 
-        <div className="grid gap-px border border-border bg-border lg:grid-cols-[1.35fr_1fr]">
-          <div className="relative min-h-[320px] overflow-hidden bg-background lg:min-h-[480px]">
+        <div className="grid gap-5 lg:grid-cols-[1.35fr_1fr]">
+          <div className="relative min-h-[320px] overflow-hidden rounded-[2rem] border border-border bg-background lg:min-h-[480px]">
             {CAMPUSES.map((c, i) => (
               <img
                 key={c.key}
@@ -120,7 +120,7 @@ const Solutions = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-between gap-8 bg-card p-8 lg:p-10">
+          <div className="sand-panel flex flex-col justify-between gap-8 p-8 lg:p-10">
             <div>
               <p className="text-lg leading-relaxed text-foreground">{campus.tagline}</p>
               <ul className="mt-8 space-y-4">
@@ -132,12 +132,12 @@ const Solutions = () => {
                 ))}
               </ul>
             </div>
-            <div className="grid grid-cols-2 gap-px border-t border-border bg-border pt-px">
-              <div className="bg-card pt-6">
+            <div className="grid grid-cols-2 gap-4 border-t border-border/70">
+              <div className="pt-6">
                 <p className="text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground">Floor area</p>
                 <p className="mt-2 font-head text-xl font-bold text-primary">{campus.area}</p>
               </div>
-              <div className="bg-card pl-6 pt-6">
+              <div className="pl-6 pt-6">
                 <p className="text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground">Delivery</p>
                 <p className="mt-2 font-head text-xl font-bold text-primary">{campus.term}</p>
               </div>

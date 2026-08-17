@@ -46,7 +46,7 @@ const Logistics = () => {
       lead="In-house export team, customs support and cargo insurance. Modules travel within container envelope — on any road."
     >
       <div ref={ref} className={className}>
-        <div className="relative grid gap-8 border border-border bg-card p-8 sm:grid-cols-3 lg:grid-cols-6 lg:p-10">
+        <div className="sand-panel relative grid gap-8 p-8 sm:grid-cols-3 lg:grid-cols-6 lg:p-10">
           {CHAIN.map((c, i) => (
             <div key={c.title} className="relative">
               <Icon name={c.icon} fallback={c.fallback ?? 'CircleAlert'} size={26} className="text-primary" />
@@ -59,9 +59,12 @@ const Logistics = () => {
           ))}
         </div>
 
-        <div className="mt-px grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {SHOTS.map((s) => (
-            <div key={s.src} className="group relative aspect-[4/3] overflow-hidden bg-background">
+            <div
+              key={s.src}
+              className="group relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-border bg-background"
+            >
               <img
                 src={s.src}
                 alt={s.alt}

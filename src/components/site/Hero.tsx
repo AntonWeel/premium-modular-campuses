@@ -9,7 +9,10 @@ const STATS = [
 ];
 
 const Hero = () => (
-  <section id="top" className="relative min-h-[100svh] w-full overflow-hidden bg-[var(--hero-x-sky)]">
+  <section
+    id="top"
+    className="relative min-h-[100svh] w-full overflow-hidden rounded-b-[3rem] bg-[var(--hero-x-sky)]"
+  >
     <div className="absolute inset-0">
       <img
         src="https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/71e469f9-464f-4d69-b40e-f1c9208bfaa2.jpg"
@@ -40,7 +43,7 @@ const Hero = () => (
         </div>
       </div>
 
-      <div className="rise border-t border-border/70 [animation-delay:0.6s]">
+      <div className="rise border-t border-border/60 [animation-delay:0.6s]">
         <div className="grid grid-cols-2 gap-x-6 gap-y-6 py-7 sm:grid-cols-3 lg:grid-cols-5">
           {STATS.map((s) => (
             <div key={s.label}>

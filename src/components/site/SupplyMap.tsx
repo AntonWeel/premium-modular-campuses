@@ -270,7 +270,7 @@ const SupplyMap = () => {
               key={r.key}
               type="button"
               onClick={() => setRegion(r.key)}
-              className={`rounded-sm border px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.16em] transition-all duration-300 sm:px-5 ${
+              className={`rounded-full border px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.16em] transition-all duration-300 sm:px-5 ${
                 r.key === region
                   ? 'border-primary text-primary'
                   : 'border-border text-muted-foreground hover:border-primary/60 hover:text-foreground'
@@ -281,8 +281,8 @@ const SupplyMap = () => {
           ))}
         </div>
 
-        <div className="grid gap-px border border-border bg-border">
-          <div className="relative overflow-hidden bg-background">
+        <div className="grid gap-5">
+          <div className="dune-field relative overflow-hidden rounded-[2rem] border border-border bg-background">
             <div className="relative w-full pt-[42%]">
               <div className="absolute inset-0">
                 <div
@@ -354,7 +354,7 @@ const SupplyMap = () => {
                       <span className="absolute inset-0 animate-ping rounded-full bg-primary/60" />
                     )}
                     <span
-                      className={`pointer-events-none absolute bottom-[160%] left-1/2 w-max max-w-[200px] -translate-x-1/2 whitespace-nowrap rounded-sm border border-border bg-card px-3 py-2 text-left transition-opacity duration-300 ${
+                      className={`pointer-events-none absolute bottom-[160%] left-1/2 w-max max-w-[200px] -translate-x-1/2 whitespace-nowrap rounded-2xl border border-border bg-card px-3 py-2 text-left transition-opacity duration-300 ${
                         hover === d.country ? 'opacity-100' : 'opacity-0'
                       }`}
                     >
@@ -370,7 +370,7 @@ const SupplyMap = () => {
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-border px-6 py-4 md:px-8">
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-border/70 px-6 py-4 md:px-8">
               <span className="flex items-center gap-2 text-[0.62rem] uppercase tracking-[0.18em] text-muted-foreground">
                 <i className="block h-2 w-2 rounded-full bg-primary" />
                 Active hub
@@ -386,8 +386,8 @@ const SupplyMap = () => {
             </div>
           </div>
 
-          <div className="bg-card">
-            <div className="hidden grid-cols-[1.1fr_1.4fr_0.9fr_0.7fr] gap-4 border-b border-border px-8 py-4 text-[0.6rem] uppercase tracking-[0.18em] text-muted-foreground md:grid">
+          <div className="sand-panel overflow-hidden">
+            <div className="hidden grid-cols-[1.1fr_1.4fr_0.9fr_0.7fr] gap-4 border-b border-border/70 px-8 py-4 text-[0.6rem] uppercase tracking-[0.18em] text-muted-foreground md:grid">
               <span>Country</span>
               <span>Gateway</span>
               <span>Mode</span>
@@ -400,8 +400,8 @@ const SupplyMap = () => {
                   key={d.country}
                   onMouseEnter={() => setHover(d.country)}
                   onMouseLeave={() => setHover(null)}
-                  className={`border-b border-border px-8 py-5 transition-colors duration-300 last:border-b-0 md:grid md:grid-cols-[1.1fr_1.4fr_0.9fr_0.7fr] md:items-center md:gap-4 ${
-                    hover === d.country ? 'bg-background' : ''
+                  className={`border-b border-border/60 px-8 py-5 transition-colors duration-300 last:border-b-0 md:grid md:grid-cols-[1.1fr_1.4fr_0.9fr_0.7fr] md:items-center md:gap-4 ${
+                    hover === d.country ? 'bg-background/70' : ''
                   }`}
                 >
                   <div>
@@ -425,9 +425,9 @@ const SupplyMap = () => {
           </div>
         </div>
 
-        <div className="mt-px grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {SUMMARY.map((s) => (
-            <div key={s.label} className="bg-background p-8">
+            <div key={s.label} className="sand-panel p-8">
               <p className="font-head text-2xl font-extrabold tracking-tight text-primary lg:text-3xl">
                 {s.value}
               </p>

@@ -4,86 +4,88 @@
 
 @layer base {
   :root {
-    /* --- Living Campus: Arctic blue + gold (hero tokens) --- */
-    --background: 210 58% 9%; /* #0A1826 */
-    --foreground: 207 44% 95%; /* #EDF3F8 */
+    /* --- Living Campus: Arabian sand + graphite (Mercedes tonality) --- */
+    --background: 30 16% 9%; /* deep dune graphite */
+    --foreground: 36 33% 95%; /* warm sand white */
 
-    --card: 212 50% 14%; /* #122336 */
-    --card-foreground: 207 44% 95%;
+    --card: 30 15% 13%;
+    --card-foreground: 36 33% 95%;
 
-    --popover: 212 50% 14%;
-    --popover-foreground: 207 44% 95%;
+    --popover: 30 15% 13%;
+    --popover-foreground: 36 33% 95%;
 
-    --primary: 37 71% 59%; /* #E0A64B */
-    --primary-foreground: 84 29% 7%; /* #12160C */
+    --primary: 34 52% 65%; /* Arabian sand */
+    --primary-foreground: 30 30% 10%;
 
-    --secondary: 212 50% 14%;
-    --secondary-foreground: 207 44% 95%;
+    --secondary: 30 15% 13%;
+    --secondary-foreground: 36 33% 95%;
 
-    --muted: 212 50% 14%;
-    --muted-foreground: 208 25% 69%; /* #9DB2C4 */
+    --muted: 30 15% 13%;
+    --muted-foreground: 33 18% 68%; /* soft sand grey */
 
-    --accent: 37 71% 59%;
-    --accent-foreground: 84 29% 7%;
+    --accent: 34 52% 65%;
+    --accent-foreground: 30 30% 10%;
 
-    --destructive: 0 72% 51%;
-    --destructive-foreground: 207 44% 95%;
+    --destructive: 8 62% 48%;
+    --destructive-foreground: 36 33% 95%;
 
-    --border: 209 38% 22%; /* #22384C */
-    --input: 209 38% 22%;
-    --ring: 37 71% 59%;
+    --border: 30 17% 23%;
+    --input: 30 17% 23%;
+    --ring: 34 52% 65%;
 
-    --radius: 0.1875rem;
+    --radius: 1.5rem;
 
-    --sidebar-background: 210 58% 9%;
-    --sidebar-foreground: 207 44% 95%;
-    --sidebar-primary: 37 71% 59%;
-    --sidebar-primary-foreground: 84 29% 7%;
-    --sidebar-accent: 212 50% 14%;
-    --sidebar-accent-foreground: 207 44% 95%;
-    --sidebar-border: 209 38% 22%;
-    --sidebar-ring: 37 71% 59%;
+    --sidebar-background: 30 16% 9%;
+    --sidebar-foreground: 36 33% 95%;
+    --sidebar-primary: 34 52% 65%;
+    --sidebar-primary-foreground: 30 30% 10%;
+    --sidebar-accent: 30 15% 13%;
+    --sidebar-accent-foreground: 36 33% 95%;
+    --sidebar-border: 30 17% 23%;
+    --sidebar-ring: 34 52% 65%;
 
-    /* raw hero tokens kept 1:1 from the approved hero */
-    --hero-bg: #0a1826;
-    --hero-surface: #122336;
-    --hero-text: #edf3f8;
-    --hero-muted: #9db2c4;
-    --hero-accent: #e0a64b;
-    --hero-accent-contrast: #12160c;
-    --hero-x-photo-veil: #06111c;
-    --hero-x-line: #22384c;
-    --hero-x-sky: #12314a;
+    /* raw tokens */
+    --hero-bg: #1a1511;
+    --hero-surface: #262019;
+    --hero-text: #f6efe6;
+    --hero-muted: #b9aa96;
+    --hero-accent: #d5ab6f;
+    --hero-accent-contrast: #201a12;
+    --hero-x-photo-veil: #14100c;
+    --hero-x-line: #42372c;
+    --hero-x-sky: #4a3a28;
+    --sand-1: #d8bb8d;
+    --sand-2: #b8935f;
   }
 
   .dark {
-    --background: 210 58% 9%;
-    --foreground: 207 44% 95%;
-    --card: 212 50% 14%;
-    --card-foreground: 207 44% 95%;
-    --popover: 212 50% 14%;
-    --popover-foreground: 207 44% 95%;
-    --primary: 37 71% 59%;
-    --primary-foreground: 84 29% 7%;
-    --secondary: 212 50% 14%;
-    --secondary-foreground: 207 44% 95%;
-    --muted: 212 50% 14%;
-    --muted-foreground: 208 25% 69%;
-    --accent: 37 71% 59%;
-    --accent-foreground: 84 29% 7%;
-    --destructive: 0 62.8% 40%;
-    --destructive-foreground: 207 44% 95%;
-    --border: 209 38% 22%;
-    --input: 209 38% 22%;
-    --ring: 37 71% 59%;
-    --sidebar-background: 210 58% 9%;
-    --sidebar-foreground: 207 44% 95%;
-    --sidebar-primary: 37 71% 59%;
-    --sidebar-primary-foreground: 84 29% 7%;
-    --sidebar-accent: 212 50% 14%;
-    --sidebar-accent-foreground: 207 44% 95%;
-    --sidebar-border: 209 38% 22%;
-    --sidebar-ring: 37 71% 59%;
+    --background: 30 16% 9%;
+    --foreground: 36 33% 95%;
+    --card: 30 15% 13%;
+    --card-foreground: 36 33% 95%;
+    --popover: 30 15% 13%;
+    --popover-foreground: 36 33% 95%;
+    --primary: 34 52% 65%;
+    --primary-foreground: 30 30% 10%;
+    --secondary: 30 15% 13%;
+    --secondary-foreground: 36 33% 95%;
+    --muted: 30 15% 13%;
+    --muted-foreground: 33 18% 68%;
+    --accent: 34 52% 65%;
+    --accent-foreground: 30 30% 10%;
+    --destructive: 8 62% 48%;
+    --destructive-foreground: 36 33% 95%;
+    --border: 30 17% 23%;
+    --input: 30 17% 23%;
+    --ring: 34 52% 65%;
+    --sidebar-background: 30 16% 9%;
+    --sidebar-foreground: 36 33% 95%;
+    --sidebar-primary: 34 52% 65%;
+    --sidebar-primary-foreground: 30 30% 10%;
+    --sidebar-accent: 30 15% 13%;
+    --sidebar-accent-foreground: 36 33% 95%;
+    --sidebar-border: 30 17% 23%;
+    --sidebar-ring: 34 52% 65%;
   }
 }
 
@@ -96,6 +98,23 @@
     @apply bg-background text-foreground;
     font-family: "Inter", system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-image:
+      radial-gradient(
+        120% 70% at 82% -8%,
+        color-mix(in srgb, var(--sand-1) 16%, transparent) 0%,
+        transparent 58%
+      ),
+      radial-gradient(
+        100% 60% at 8% 12%,
+        color-mix(in srgb, var(--sand-2) 12%, transparent) 0%,
+        transparent 62%
+      ),
+      radial-gradient(
+        140% 80% at 50% 108%,
+        color-mix(in srgb, var(--sand-2) 14%, transparent) 0%,
+        transparent 60%
+      );
+    background-attachment: fixed;
   }
 
   h1,
@@ -142,6 +161,31 @@
       transparent 20%,
       color-mix(in srgb, var(--hero-x-photo-veil) 88%, transparent) 100%
     );
+  }
+
+  .dune-field {
+    background-image:
+      radial-gradient(
+        90% 55% at 20% 100%,
+        color-mix(in srgb, var(--sand-2) 22%, transparent) 0%,
+        transparent 70%
+      ),
+      radial-gradient(
+        80% 50% at 85% 96%,
+        color-mix(in srgb, var(--sand-1) 18%, transparent) 0%,
+        transparent 72%
+      );
+  }
+
+  .sand-panel {
+    @apply rounded-[2rem] border border-border/80;
+    background:
+      linear-gradient(
+        160deg,
+        color-mix(in srgb, var(--sand-1) 7%, transparent) 0%,
+        transparent 55%
+      ),
+      hsl(var(--card));
   }
 }
 
