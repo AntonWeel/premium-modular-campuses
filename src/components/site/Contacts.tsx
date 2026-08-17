@@ -47,12 +47,12 @@ const Contacts = () => {
 
   const validate = () => {
     const next: Partial<Record<keyof FormState, string>> = {};
-    if (form.name.trim().length < 2) next.name = 'Укажите имя';
-    if (form.company.trim().length < 2) next.company = 'Укажите компанию';
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(form.email)) next.email = 'Проверьте e-mail';
-    if (form.country.trim().length < 2) next.country = 'Укажите страну';
-    if (!form.size) next.size = 'Выберите размер';
-    if (!form.people) next.people = 'Выберите количество';
+    if (form.name.trim().length < 2) next.name = 'Enter your name';
+    if (form.company.trim().length < 2) next.company = 'Enter your company';
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(form.email)) next.email = 'Check your e-mail';
+    if (form.country.trim().length < 2) next.country = 'Enter the country';
+    if (!form.size) next.size = 'Select a size';
+    if (!form.people) next.people = 'Select headcount';
     setErrors(next);
     return Object.keys(next).length === 0;
   };
@@ -61,15 +61,15 @@ const Contacts = () => {
     e.preventDefault();
     if (!validate()) {
       toast({
-        title: 'Проверьте форму',
-        description: 'Заполните обязательные поля — и мы вернёмся с расчётом.',
+        title: 'Check the form',
+        description: 'Complete the required fields and we will come back with a quote.',
       });
       return;
     }
     setSent(true);
     toast({
-      title: 'Заявка принята',
-      description: 'Инженер свяжется с вами в течение рабочего дня.',
+      title: 'Request received',
+      description: 'An engineer will contact you within one business day.',
     });
   };
 
@@ -91,20 +91,20 @@ const Contacts = () => {
       <div ref={ref} className={`${className} relative mx-auto w-full max-w-[1360px] px-6 md:px-10 lg:px-16`}>
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
-            <p className="eyebrow mb-6">Контакты</p>
+            <p className="eyebrow mb-6">Contacts</p>
             <h2 className="font-head text-[2rem] font-extrabold leading-[1.06] tracking-[-0.035em] md:text-[2.75rem]">
-              Готовы построить
-              <span className="block text-primary">свой Living Campus?</span>
+              Ready to build
+              <span className="block text-primary">your Living Campus?</span>
             </h2>
             <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground">
-              Расскажите о проекте — подготовим концепцию, смету и план площадки за 3 рабочих дня.
+              Tell us about the project — we deliver a concept, budget and site layout in 3 working days.
             </p>
 
             <div className="mt-10 space-y-5">
               {[
                 { icon: 'Mail', text: 'info@livingcampus.com', href: 'mailto:info@livingcampus.com' },
                 { icon: 'Phone', text: '+971 4 123 4567', href: 'tel:+97141234567' },
-                { icon: 'MapPin', text: 'Дубай, ОАЭ · Астана · Тюмень' },
+                { icon: 'MapPin', text: 'Dubai, UAE · Astana · Tyumen' },
               ].map((c) => (
                 <div key={c.text} className="flex items-center gap-4">
                   <span className="flex h-11 w-11 flex-none items-center justify-center rounded-sm border border-border bg-card/60 text-primary">
@@ -129,11 +129,11 @@ const Contacts = () => {
                   <Icon name="Check" size={26} />
                 </span>
                 <h3 className="mt-7 font-head text-2xl font-extrabold tracking-tight">
-                  Заявка отправлена
+                  Request sent
                 </h3>
                 <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted-foreground">
-                  {form.name}, спасибо. Инженер Living Campus свяжется с вами в течение рабочего дня
-                  и подготовит расчёт по проекту в стране «{form.country}».
+                  Thank you, {form.name}. A Living Campus engineer will contact you within one
+                  business day and prepare a quote for your project in {form.country}.
                 </p>
                 <button
                   type="button"
@@ -143,7 +143,7 @@ const Contacts = () => {
                   }}
                   className="mt-8 text-[0.7rem] uppercase tracking-[0.18em] text-primary underline-offset-4 hover:underline"
                 >
-                  Отправить ещё одну заявку
+                  Send another request
                 </button>
               </div>
             ) : (
@@ -151,7 +151,7 @@ const Contacts = () => {
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div>
                     <Input
-                      placeholder="Ваше имя"
+                      placeholder="Your name"
                       value={form.name}
                       onChange={(e) => set('name', e.target.value)}
                       className={fieldCls('name')}
@@ -160,7 +160,7 @@ const Contacts = () => {
                   </div>
                   <div>
                     <Input
-                      placeholder="Компания"
+                      placeholder="Company"
                       value={form.company}
                       onChange={(e) => set('company', e.target.value)}
                       className={fieldCls('company')}
@@ -181,7 +181,7 @@ const Contacts = () => {
                   </div>
                   <div>
                     <Input
-                      placeholder="Страна проекта"
+                      placeholder="Project country"
                       value={form.country}
                       onChange={(e) => set('country', e.target.value)}
                       className={fieldCls('country')}
@@ -193,7 +193,7 @@ const Contacts = () => {
                   <div>
                     <Select value={form.size} onValueChange={(v) => set('size', v)}>
                       <SelectTrigger className={fieldCls('size')}>
-                        <SelectValue placeholder="Размер проекта" />
+                        <SelectValue placeholder="Project size" />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="S">Campus S — 50–100</SelectItem>
@@ -207,13 +207,13 @@ const Contacts = () => {
                   <div>
                     <Select value={form.people} onValueChange={(v) => set('people', v)}>
                       <SelectTrigger className={fieldCls('people')}>
-                        <SelectValue placeholder="Число проживающих" />
+                        <SelectValue placeholder="Number of residents" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="50-100">50–100 человек</SelectItem>
-                        <SelectItem value="100-250">100–250 человек</SelectItem>
-                        <SelectItem value="250-500">250–500 человек</SelectItem>
-                        <SelectItem value="500-2000">500–2000 человек</SelectItem>
+                        <SelectItem value="50-100">50–100 people</SelectItem>
+                        <SelectItem value="100-250">100–250 people</SelectItem>
+                        <SelectItem value="250-500">250–500 people</SelectItem>
+                        <SelectItem value="500-2000">500–2,000 people</SelectItem>
                       </SelectContent>
                     </Select>
                     {errors.people && (
@@ -223,16 +223,16 @@ const Contacts = () => {
                 </div>
 
                 <Textarea
-                  placeholder="Расскажите о проекте: отрасль, сроки, площадка"
+                  placeholder="Tell us about the project: industry, timeline, site"
                   value={form.message}
                   onChange={(e) => set('message', e.target.value)}
                   className="min-h-[120px] rounded-sm border-border bg-background/70 px-4 py-3 text-sm placeholder:text-muted-foreground/70 focus-visible:ring-primary"
                 />
 
                 <div className="flex flex-wrap items-center gap-5 pt-2">
-                  <GoldButton type="submit">Запросить расчёт</GoldButton>
+                  <GoldButton type="submit">Request a quote</GoldButton>
                   <span className="text-xs text-muted-foreground">
-                    Ответим за 3 рабочих дня. Данные не передаём третьим лицам.
+                    Reply within 3 working days. We never share your data with third parties.
                   </span>
                 </div>
               </form>

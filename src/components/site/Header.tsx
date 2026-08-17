@@ -4,12 +4,13 @@ import GoldButton from './GoldButton';
 import Icon from '@/components/ui/icon';
 
 const NAV = [
-  { label: 'Решения', href: '#solutions' },
-  { label: 'Преимущества', href: '#advantages' },
-  { label: 'Производство', href: '#production' },
-  { label: 'Этапы', href: '#process' },
-  { label: 'Галерея', href: '#gallery' },
-  { label: 'Контакты', href: '#contacts' },
+  { label: 'Solutions', href: '#solutions' },
+  { label: 'Advantages', href: '#advantages' },
+  { label: 'Production', href: '#production' },
+  { label: 'Process', href: '#process' },
+  { label: 'Gallery', href: '#gallery' },
+  { label: 'Supply', href: '#supply' },
+  { label: 'Contacts', href: '#contacts' },
 ];
 
 const Header = () => {
@@ -53,13 +54,13 @@ const Header = () => {
               </a>
             ))}
             <GoldButton href="#contacts" small>
-              Рассчитать кампус
+              Request a quote
             </GoldButton>
           </nav>
 
           <button
             type="button"
-            aria-label="Меню"
+            aria-label="Menu"
             onClick={() => setOpen((v) => !v)}
             className="flex h-11 w-11 items-center justify-center rounded-sm border border-border text-foreground transition-colors hover:border-primary hover:text-primary lg:hidden"
           >
@@ -86,7 +87,7 @@ const Header = () => {
             </a>
           ))}
           <GoldButton href="#contacts" className="mt-8 self-start" onClick={() => setOpen(false)}>
-            Рассчитать кампус
+            Request a quote
           </GoldButton>
         </nav>
       </div>

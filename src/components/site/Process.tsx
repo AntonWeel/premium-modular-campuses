@@ -4,14 +4,14 @@ import Icon from '@/components/ui/icon';
 import { useReveal } from '@/hooks/use-reveal';
 
 const STEPS = [
-  { icon: 'PencilRuler', title: 'Инжиниринг и проект', term: '7–14 дней', text: 'Посадка на площадку, планировки, спецификации, смета и график поставки.' },
-  { icon: 'Frame', title: 'Стальной каркас', term: '10 дней', text: 'Сварка рам на роботизированной линии, антикоррозийная обработка.' },
-  { icon: 'Layers', title: 'Сэндвич-панели', term: '7 дней', text: 'Ограждающий контур для эксплуатации при температурах до −55 °C.' },
-  { icon: 'Paintbrush', title: 'Отделка интерьера', term: '14 дней', text: 'Мебель, сантехника, электрика, вентиляция — всё внутри модуля на заводе.' },
-  { icon: 'ClipboardCheck', title: 'Контроль качества', term: '3 дня', text: 'Тесты герметичности, электрики, пожарной безопасности, приёмка заказчиком.' },
-  { icon: 'Package', title: 'Упаковка и отгрузка', term: '5 дней', text: 'Транспортные рамы, защита, документы и таможенное оформление.' },
-  { icon: 'Truck', title: 'Монтаж на объекте', term: '15–30 дней', text: 'Фундаменты, кран, стыковка модулей, подключение инженерных сетей.' },
-  { icon: 'KeyRound', title: 'Кампус готов', term: '—', text: 'Пусконаладка, обучение персонала, гарантия и сервисное сопровождение.' },
+  { icon: 'PencilRuler', title: 'Engineering', term: '7–14 days', text: 'Site layout, floor plans, specifications, budget and the delivery schedule.' },
+  { icon: 'Frame', title: 'Steel frame', term: '10 days', text: 'Robotic frame welding followed by anti-corrosion treatment.' },
+  { icon: 'Layers', title: 'Sandwich panels', term: '7 days', text: 'A building envelope rated for operation down to −55 °C.' },
+  { icon: 'Paintbrush', title: 'Interior fit-out', term: '14 days', text: 'Furniture, plumbing, wiring and HVAC — all installed inside the module at the plant.' },
+  { icon: 'ClipboardCheck', title: 'Quality control', term: '3 days', text: 'Air-tightness, electrical and fire safety testing, plus client acceptance.' },
+  { icon: 'Package', title: 'Packing & shipment', term: '5 days', text: 'Transport frames, protection, documentation and customs clearance.' },
+  { icon: 'Truck', title: 'Site installation', term: '15–30 days', text: 'Foundations, crane work, module coupling and utility connections.' },
+  { icon: 'KeyRound', title: 'Camp ready', term: '—', text: 'Commissioning, staff training, warranty and ongoing service support.' },
 ];
 
 const Process = () => {
@@ -21,14 +21,14 @@ const Process = () => {
   return (
     <Section
       id="process"
-      eyebrow="От завода до площадки"
+      eyebrow="From plant to site"
       title={
         <>
-          Полный цикл
-          <span className="block text-primary">за 8 шагов</span>
+          The full cycle
+          <span className="block text-primary">in 8 steps</span>
         </>
       }
-      lead="Каждый этап зафиксирован в графике. Вы видите статус модулей онлайн — от раскроя стали до заселения."
+      lead="Every stage is locked into the schedule. You track module status online — from steel cutting to move-in."
     >
       <div ref={ref} className={className}>
         <div className="relative mb-12 hidden md:block">
@@ -66,7 +66,7 @@ const Process = () => {
         <div className="hidden border border-border bg-card p-8 md:block lg:p-12">
           <div className="flex flex-wrap items-baseline gap-6">
             <p className="font-head text-[0.75rem] uppercase tracking-[0.3em] text-primary">
-              Шаг {String(active + 1).padStart(2, '0')}
+              Step {String(active + 1).padStart(2, '0')}
             </p>
             <h3 className="font-head text-3xl font-extrabold tracking-tight">{STEPS[active].title}</h3>
             <span className="rounded-sm border border-border px-3 py-1 text-[0.68rem] uppercase tracking-[0.16em] text-muted-foreground">

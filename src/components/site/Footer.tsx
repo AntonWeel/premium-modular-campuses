@@ -1,18 +1,41 @@
 import Logo from './Logo';
 import Icon from '@/components/ui/icon';
 
-const COLUMNS = [
+interface FooterLink {
+  label: string;
+  href: string;
+}
+
+const COLUMNS: { title: string; links: FooterLink[] }[] = [
   {
-    title: 'Решения',
-    links: ['Campus S', 'Campus M', 'Campus L', 'Campus XL', 'Индивидуальный проект'],
+    title: 'Solutions',
+    links: [
+      { label: 'Campus S', href: '#solutions' },
+      { label: 'Campus M', href: '#solutions' },
+      { label: 'Campus L', href: '#solutions' },
+      { label: 'Campus XL', href: '#solutions' },
+      { label: 'Bespoke project', href: '#contacts' },
+    ],
   },
   {
-    title: 'Компания',
-    links: ['О нас', 'Команда', 'Ценности', 'Карьера', 'Новости'],
+    title: 'Company',
+    links: [
+      { label: 'About us', href: '#advantages' },
+      { label: 'Team', href: '#top' },
+      { label: 'Values', href: '#top' },
+      { label: 'Careers', href: '#top' },
+      { label: 'News', href: '#top' },
+    ],
   },
   {
-    title: 'Ресурсы',
-    links: ['Брошюра', 'Кейсы', 'Вопросы и ответы', 'Сертификаты', 'Загрузки'],
+    title: 'Resources',
+    links: [
+      { label: 'Brochure', href: '#top' },
+      { label: 'Case studies', href: '#gallery' },
+      { label: 'Supply map', href: '#supply' },
+      { label: 'Certificates', href: '#top' },
+      { label: 'Downloads', href: '#top' },
+    ],
   },
 ];
 
@@ -23,7 +46,7 @@ const Footer = () => (
         <div>
           <Logo />
           <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
-            Премиальные модульные кампусы для строительства, добычи, промышленности и энергетики.
+            Premium modular camps for construction, mining, industry and energy projects.
           </p>
           <div className="mt-7 flex gap-3">
             {['Linkedin', 'Youtube', 'Facebook', 'Instagram'].map((s) => (
@@ -44,12 +67,12 @@ const Footer = () => (
             <p className="text-[0.65rem] uppercase tracking-[0.24em] text-primary">{col.title}</p>
             <ul className="mt-6 space-y-3">
               {col.links.map((l) => (
-                <li key={l}>
+                <li key={l.label}>
                   <a
-                    href="#top"
+                    href={l.href}
                     className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                   >
-                    {l}
+                    {l.label}
                   </a>
                 </li>
               ))}
@@ -60,14 +83,14 @@ const Footer = () => (
 
       <div className="mt-14 flex flex-col gap-4 border-t border-border pt-8 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Living Campus. Все права защищены.
+          © {new Date().getFullYear()} Living Campus. All rights reserved.
         </p>
         <div className="flex gap-6">
           <a href="#top" className="text-xs text-muted-foreground transition-colors hover:text-primary">
-            Политика конфиденциальности
+            Privacy Policy
           </a>
           <a href="#top" className="text-xs text-muted-foreground transition-colors hover:text-primary">
-            Условия использования
+            Terms of Use
           </a>
         </div>
       </div>

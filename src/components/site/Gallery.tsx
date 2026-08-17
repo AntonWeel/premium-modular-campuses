@@ -4,66 +4,66 @@ import Icon from '@/components/ui/icon';
 import { useReveal } from '@/hooks/use-reveal';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 
-const CATEGORIES = ['Все', 'Жильё', 'Питание', 'Спорт', 'Отдых'] as const;
+const CATEGORIES = ['All', 'Living', 'Dining', 'Sport', 'Leisure'] as const;
 
 const ITEMS = [
   {
-    cat: 'Жильё',
-    title: 'Комнаты для проживания',
-    text: 'Одно- и двухместные номера с санузлом, рабочим столом и хранением.',
+    cat: 'Living',
+    title: 'Accommodation rooms',
+    text: 'Single and twin rooms with en-suite bathroom, desk and storage.',
     src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/f6950d53-f781-4013-ae1a-7ab9c93a5963.jpg',
   },
   {
-    cat: 'Питание',
-    title: 'Столовая и кухня',
-    text: 'Полный цикл питания: заготовка, линия раздачи, зал на 250 мест.',
+    cat: 'Dining',
+    title: 'Canteen and kitchen',
+    text: 'Full catering cycle: prep areas, servery line and a 250-seat dining hall.',
     src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/147a1ca1-47a6-450c-b9b5-79f93e919370.jpg',
   },
   {
-    cat: 'Спорт',
-    title: 'Фитнес-центр',
-    text: 'Тренажёрный зал, кардиозона, раздевалки и душевые.',
+    cat: 'Sport',
+    title: 'Fitness centre',
+    text: 'Weights hall, cardio zone, changing rooms and showers.',
     src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/cbe81260-ed4e-4d64-abdf-5ed98b00b242.jpg',
   },
   {
-    cat: 'Отдых',
-    title: 'Зоны отдыха',
-    text: 'Лаунж, бильярд, кинозал и переговорные для смены после вахты.',
+    cat: 'Leisure',
+    title: 'Recreation areas',
+    text: 'Lounge, billiards, cinema room and meeting spaces for off-shift hours.',
     src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/f3521d27-968e-48ac-8f0e-2bd02baba55e.jpg',
   },
   {
-    cat: 'Жильё',
-    title: 'Кампус на 500 мест',
-    text: 'Кварталы, освещение, благоустройство и спортивное ядро.',
+    cat: 'Living',
+    title: '500-bed camp',
+    text: 'Residential blocks, lighting, landscaping and a central sports core.',
     src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/71e469f9-464f-4d69-b40e-f1c9208bfaa2.jpg',
   },
   {
-    cat: 'Спорт',
-    title: 'Открытые площадки',
-    text: 'Футбольное поле, воркаут и прогулочные маршруты внутри кампуса.',
+    cat: 'Sport',
+    title: 'Outdoor facilities',
+    text: 'Football pitch, calisthenics area and walking routes across the camp.',
     src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/1238d11e-994e-410e-9cf7-bd28267df2e6.jpg',
   },
 ];
 
 const Gallery = () => {
-  const [cat, setCat] = useState<(typeof CATEGORIES)[number]>('Все');
+  const [cat, setCat] = useState<(typeof CATEGORIES)[number]>('All');
   const [open, setOpen] = useState<number | null>(null);
   const { ref, className } = useReveal<HTMLDivElement>();
 
-  const list = ITEMS.filter((i) => cat === 'Все' || i.cat === cat);
+  const list = ITEMS.filter((i) => cat === 'All' || i.cat === cat);
 
   return (
     <Section
       id="gallery"
       className="bg-card"
-      eyebrow="Галерея пространств"
+      eyebrow="Gallery of spaces"
       title={
         <>
-          Пространства,
-          <span className="block text-primary">в которых хочется жить</span>
+          Spaces people
+          <span className="block text-primary">actually want to live in</span>
         </>
       }
-      lead="Комфорт удерживает людей на объекте. Мы проектируем кампус как место жизни, а не как времянку."
+      lead="Comfort keeps crews on site. We design the camp as a place to live, not as temporary shelter."
       headerRight={
         <div className="flex flex-wrap gap-2">
           {CATEGORIES.map((c) => (

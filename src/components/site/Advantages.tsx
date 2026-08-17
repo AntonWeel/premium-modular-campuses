@@ -5,33 +5,33 @@ import { useReveal } from '@/hooks/use-reveal';
 const ITEMS = [
   {
     icon: 'Zap',
-    title: 'На 70% быстрее',
-    text: 'Завод и площадка работают параллельно — сроки сокращаются кратно.',
+    title: '70% faster',
+    text: 'Plant and site run in parallel, so programme time drops dramatically.',
   },
   {
     icon: 'Factory',
-    title: 'Заводское качество',
-    text: 'Точная геометрия и контроль на каждом посту цеха, а не в поле.',
+    title: 'Factory quality',
+    text: 'Precise geometry and inspection at every station — in the shop, not in the field.',
   },
   {
     icon: 'Globe',
-    title: 'Доставка по миру',
-    text: 'Автотранспорт, море, ж/д. 25+ стран и любая логистическая схема.',
+    title: 'Worldwide delivery',
+    text: 'Road, sea and rail. 25+ countries and any logistics scheme you need.',
   },
   {
     icon: 'ShieldCheck',
-    title: 'Огнестойкость',
-    text: 'Негорючие материалы, сертификация по международным нормам.',
+    title: 'Fire performance',
+    text: 'Non-combustible materials certified to international standards.',
   },
   {
     icon: 'Leaf',
-    title: 'Энергоэффективность',
-    text: 'Контур до −55 °C, рекуперация, низкая стоимость эксплуатации.',
+    title: 'Energy efficiency',
+    text: 'Envelope rated to −55 °C, heat recovery and low running costs.',
   },
   {
     icon: 'Boxes',
-    title: 'Расширяемость',
-    text: 'Кампус масштабируется и переезжает на новый объект без потерь.',
+    title: 'Scalable by design',
+    text: 'The camp expands and relocates to the next site without losses.',
   },
 ];
 
@@ -41,14 +41,14 @@ const Advantages = () => {
   return (
     <Section
       id="advantages"
-      eyebrow="Почему Living Campus"
+      eyebrow="Why Living Campus"
       title={
         <>
-          Построено для результата.
-          <span className="block text-primary">Спроектировано для людей.</span>
+          Built for performance.
+          <span className="block text-primary">Designed for people.</span>
         </>
       }
-      lead="Мы отвечаем за весь цикл: от расчёта посадки на площадке до сдачи заселённого кампуса под ключ."
+      lead="We own the full cycle — from site layout studies to handing over a fully occupied turnkey camp."
     >
       <div ref={ref} className={`${className} grid gap-px overflow-hidden border border-border bg-border sm:grid-cols-2 lg:grid-cols-3`}>
         {ITEMS.map((it, i) => (

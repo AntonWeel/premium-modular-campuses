@@ -7,6 +7,7 @@ import Production from '@/components/site/Production';
 import Logistics from '@/components/site/Logistics';
 import Gallery from '@/components/site/Gallery';
 import Geography from '@/components/site/Geography';
+import SupplyMap from '@/components/site/SupplyMap';
 import Contacts from '@/components/site/Contacts';
 import Footer from '@/components/site/Footer';
 
@@ -22,6 +23,7 @@ const Index = () => (
       <Logistics />
       <Gallery />
       <Geography />
+      <SupplyMap />
       <Contacts />
     </main>
     <Footer />

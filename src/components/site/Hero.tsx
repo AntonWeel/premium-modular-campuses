@@ -1,11 +1,11 @@
 import GoldButton from './GoldButton';
 
 const STATS = [
-  { value: '15+', label: 'лет опыта' },
-  { value: '250 000+', label: 'м² поставлено' },
-  { value: '500+', label: 'проектов' },
-  { value: '25+', label: 'стран' },
-  { value: '98%', label: 'довольных клиентов' },
+  { value: '15+', label: 'years of expertise' },
+  { value: '250,000+', label: 'sq m delivered' },
+  { value: '500+', label: 'projects' },
+  { value: '25+', label: 'countries' },
+  { value: '98%', label: 'client satisfaction' },
 ];
 
 const Hero = () => (
@@ -13,7 +13,7 @@ const Hero = () => (
     <div className="absolute inset-0">
       <img
         src="https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/71e469f9-464f-4d69-b40e-f1c9208bfaa2.jpg"
-        alt="Модульный кампус на 500 мест в вечерних огнях"
+        alt="500-bed modular camp lit up at dusk"
         className="h-full w-full animate-hero-zoom object-cover object-[50%_42%]"
       />
     </div>
@@ -23,19 +23,19 @@ const Hero = () => (
       <div className="h-[92px]" />
 
       <div className="max-w-[760px] self-center pb-10">
-        <p className="eyebrow rise mb-7 [animation-delay:0.18s]">Проживание вахты и персонала</p>
+        <p className="eyebrow rise mb-7 [animation-delay:0.18s]">Rotational crew &amp; staff accommodation</p>
         <h1 className="rise font-head text-[2.6rem] font-extrabold leading-[1.06] tracking-[-0.035em] [animation-delay:0.32s] sm:text-[3.4rem] lg:text-[4rem]">
-          Кампус на&nbsp;500&nbsp;человек
-          <span className="block text-primary">за 90 дней</span>
+          A 500-person camp
+          <span className="block text-primary">delivered in 90 days</span>
         </h1>
         <p className="rise mt-7 max-w-[500px] text-[1.05rem] leading-[1.55] text-muted-foreground [animation-delay:0.46s]">
-          Модули собираем на&nbsp;заводе, привозим на&nbsp;площадку готовыми: комнаты, столовая,
-          спортзал, инженерия. Вы&nbsp;открываете смену, а&nbsp;не&nbsp;стройку.
+          Modules are built in our plants and arrive on site complete: rooms, canteen, gym and full
+          engineering. You open a shift, not a construction site.
         </p>
         <div className="rise mt-9 flex flex-wrap items-center gap-6 [animation-delay:0.6s]">
-          <GoldButton href="#contacts">Рассчитать кампус</GoldButton>
+          <GoldButton href="#contacts">Request a quote</GoldButton>
           <span className="text-[0.8rem] text-muted-foreground">
-            Смета и&nbsp;план площадки — за&nbsp;3 рабочих дня
+            Budget and site layout in&nbsp;3 working days
           </span>
         </div>
       </div>
@@ -55,14 +55,14 @@ const Hero = () => (
         </div>
         <div className="flex items-center justify-between border-t border-border/70 py-5 pb-7">
           <p className="text-[0.72rem] uppercase tracking-[0.22em] text-muted-foreground">
-            Ямал · Кузбасс · Казахстан — <span className="text-foreground">работаем при −55&nbsp;°C</span>
+            Yamal · Kuzbass · Kazakhstan — <span className="text-foreground">rated to −55&nbsp;°C</span>
           </p>
           <a
             href="#advantages"
             className="flex items-center gap-3 text-[0.68rem] uppercase tracking-[0.22em] text-muted-foreground transition-colors hover:text-primary"
           >
             <i className="block h-[26px] w-px animate-scroll-pulse bg-gradient-to-b from-transparent to-primary" />
-            Листайте
+            Scroll
           </a>
         </div>
       </div>

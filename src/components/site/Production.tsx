@@ -7,36 +7,36 @@ import { Dialog, DialogContent } from '@/components/ui/dialog';
 
 const CARDS = [
   {
-    title: 'Производство стального каркаса',
-    text: 'Роботизированная сварка рам с допуском ±2 мм.',
+    title: 'Steel frame production',
+    text: 'Robotic frame welding to a ±2 mm tolerance.',
     image:
       'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/c3d7112e-2958-44ab-acb6-d61fb7d13747.jpg',
   },
   {
-    title: 'Линия сэндвич-панелей',
-    text: 'Собственное производство ограждающего контура.',
+    title: 'Sandwich panel line',
+    text: 'In-house manufacturing of the building envelope.',
     image:
       'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/9beb8345-cb53-466c-99e0-4190f9b713bf.jpg',
   },
   {
-    title: 'Контроль качества',
-    text: '112 контрольных точек на каждый модуль.',
+    title: 'Quality control',
+    text: '112 inspection points on every module.',
     image:
       'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/2b670682-7784-4494-8bee-03303e360164.jpg',
   },
   {
-    title: 'Монтаж на площадке',
-    text: 'До 12 модулей в сутки силами одной бригады.',
+    title: 'On-site installation',
+    text: 'Up to 12 modules per day with a single crew.',
     image:
       'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/3a7048c3-597c-43b2-a5e3-09435c35dced.jpg',
   },
 ];
 
 const SPECS = [
-  { value: '48 000 м²', label: 'площадь заводов' },
-  { value: '3 500', label: 'модулей в год' },
-  { value: 'ISO 9001', label: 'система качества' },
-  { value: 'EI 60', label: 'предел огнестойкости' },
+  { value: '48,000 sq m', label: 'plant floor area' },
+  { value: '3,500', label: 'modules per year' },
+  { value: 'ISO 9001', label: 'quality system' },
+  { value: 'EI 60', label: 'fire resistance rating' },
 ];
 
 const Production = () => {
@@ -47,15 +47,15 @@ const Production = () => {
     <Section
       id="production"
       className="bg-card"
-      eyebrow="Технологии и производство"
+      eyebrow="Technology and production"
       title={
         <>
-          Точность завода.
-          <span className="block text-primary">Гарантия качества.</span>
+          Factory precision.
+          <span className="block text-primary">Guaranteed quality.</span>
         </>
       }
-      lead="Два завода полного цикла: от раскроя стали до готового модуля с мебелью и инженерией внутри."
-      headerRight={<GoldButton href="#contacts" ghost>Экскурсия по заводу</GoldButton>}
+      lead="Two full-cycle plants: from steel cutting to a finished module with furniture and utilities already inside."
+      headerRight={<GoldButton href="#contacts" ghost>Book a plant tour</GoldButton>}
     >
       <div ref={ref} className={className}>
         <div className="grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">

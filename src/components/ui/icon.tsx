@@ -11,10 +11,10 @@ const Icon: React.FC<IconProps> = ({ name, fallback = 'CircleAlert', ...props })
   const IconComponent = (LucideIcons as Record<string, React.FC<LucideProps>>)[name];
 
   if (!IconComponent) {
-    // Если иконка не найдена, используем fallback иконку
+    // If the icon is not found, use the fallback icon
     const FallbackIcon = (LucideIcons as Record<string, React.FC<LucideProps>>)[fallback];
 
-    // Если даже fallback не найден, возвращаем пустой span
+    // If even the fallback is missing, render an empty span
     if (!FallbackIcon) {
       return <span className="text-xs text-gray-400">[icon]</span>;
     }

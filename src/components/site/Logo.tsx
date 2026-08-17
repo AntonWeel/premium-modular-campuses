@@ -28,7 +28,7 @@ const Logo = ({ className = '' }: LogoProps) => (
         Living Campus
       </b>
       <small className="mt-[5px] block text-[0.55rem] font-medium uppercase tracking-[0.3em] text-primary">
-        Модульные кампусы
+        Modular Camps
       </small>
     </span>
   </a>

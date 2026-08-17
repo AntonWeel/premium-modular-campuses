@@ -3,30 +3,30 @@ import Icon from '@/components/ui/icon';
 import { useReveal } from '@/hooks/use-reveal';
 
 const CHAIN = [
-  { icon: 'Factory', title: 'Изготовлено', text: 'На нашем заводе' },
-  { icon: 'Package', title: 'Упаковано', text: 'В транспортные рамы' },
-  { icon: 'Truck', title: 'Доставлено', text: 'До порта или ж/д' },
-  { icon: 'Ship', title: 'Отправлено', text: 'По всему миру' },
-  { icon: 'Crane', title: 'Смонтировано', text: 'На площадке', fallback: 'Building2' },
-  { icon: 'Home', title: 'Заселено', text: 'Готово к вахте' },
+  { icon: 'Factory', title: 'Manufactured', text: 'At our own plant' },
+  { icon: 'Package', title: 'Packed', text: 'Into transport frames' },
+  { icon: 'Truck', title: 'Hauled', text: 'To port or railhead' },
+  { icon: 'Ship', title: 'Shipped', text: 'Worldwide' },
+  { icon: 'Crane', title: 'Installed', text: 'On your site', fallback: 'Building2' },
+  { icon: 'Home', title: 'Occupied', text: 'Ready for the shift' },
 ];
 
 const SHOTS = [
   {
     src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/83f9790e-a5c9-4c01-86b1-a8f5b12fc77f.jpg',
-    alt: 'Перевозка модулей автотранспортом',
+    alt: 'Road transport of modules',
   },
   {
     src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/a9818d88-c76e-4490-976a-91636a9633ad.jpg',
-    alt: 'Отгрузка в морском порту',
+    alt: 'Loading at a sea port',
   },
   {
     src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/3a7048c3-597c-43b2-a5e3-09435c35dced.jpg',
-    alt: 'Монтаж модуля краном',
+    alt: 'Crane lifting a module',
   },
   {
     src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/4eab287f-c72d-4972-b86a-03a61acb14c9.jpg',
-    alt: 'Готовый кампус',
+    alt: 'Completed camp',
   },
 ];
 
@@ -36,14 +36,14 @@ const Logistics = () => {
   return (
     <Section
       id="logistics"
-      eyebrow="Глобальная логистика"
+      eyebrow="Global logistics"
       title={
         <>
-          Доставляем всюду.
-          <span className="block text-primary">Работаем локально.</span>
+          Delivered anywhere.
+          <span className="block text-primary">Executed locally.</span>
         </>
       }
-      lead="Собственный отдел ВЭД, таможенное сопровождение и страхование груза. Модуль едет в контейнерном габарите — по любым дорогам."
+      lead="In-house export team, customs support and cargo insurance. Modules travel within container envelope — on any road."
     >
       <div ref={ref} className={className}>
         <div className="relative grid gap-8 border border-border bg-card p-8 sm:grid-cols-3 lg:grid-cols-6 lg:p-10">

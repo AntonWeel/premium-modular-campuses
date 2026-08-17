@@ -5,9 +5,9 @@ import { useReveal } from '@/hooks/use-reveal';
 
 const REGIONS = [
   {
-    name: 'Россия и Арктика',
-    projects: '260 проектов',
-    text: 'Ямал, Кузбасс, Якутия, Норильск. Исполнение до −55 °C и вечная мерзлота.',
+    name: 'Russia & the Arctic',
+    projects: '260 projects',
+    text: 'Yamal, Kuzbass, Yakutia, Norilsk. Rated to −55 °C and permafrost foundations.',
     pins: [
       { x: 58, y: 26 },
       { x: 66, y: 30 },
@@ -15,27 +15,27 @@ const REGIONS = [
     ],
   },
   {
-    name: 'Центральная Азия',
-    projects: '95 проектов',
-    text: 'Казахстан, Узбекистан, Монголия. Горнодобыча и энергетические кластеры.',
+    name: 'Central Asia',
+    projects: '95 projects',
+    text: 'Kazakhstan, Uzbekistan, Mongolia. Mining and energy clusters.',
     pins: [
       { x: 64, y: 40 },
       { x: 68, y: 44 },
     ],
   },
   {
-    name: 'Ближний Восток',
-    projects: '78 проектов',
-    text: 'ОАЭ, Саудовская Аравия, Оман. Жара +50 °C, песчаная защита, кондиционирование.',
+    name: 'Middle East',
+    projects: '78 projects',
+    text: 'UAE, Saudi Arabia, Oman. +50 °C heat, sand protection, full HVAC.',
     pins: [
       { x: 58, y: 50 },
       { x: 61, y: 54 },
     ],
   },
   {
-    name: 'Африка и Латинская Америка',
-    projects: '67 проектов',
-    text: 'Гвинея, Замбия, Чили, Перу. Автономные кампусы вдали от инфраструктуры.',
+    name: 'Africa & Latin America',
+    projects: '67 projects',
+    text: 'Guinea, Zambia, Chile, Peru. Off-grid camps far from any infrastructure.',
     pins: [
       { x: 50, y: 62 },
       { x: 28, y: 68 },
@@ -51,14 +51,14 @@ const Geography = () => {
   return (
     <Section
       id="geography"
-      eyebrow="География присутствия"
+      eyebrow="Global footprint"
       title={
         <>
-          Строим кампусы
-          <span className="block text-primary">на четырёх континентах</span>
+          We build camps
+          <span className="block text-primary">across four continents</span>
         </>
       }
-      lead="25+ стран, локальные подрядчики по монтажу и сервисные команды рядом с вашим объектом."
+      lead="25+ countries, local installation contractors and service teams close to your site."
     >
       <div ref={ref} className={`${className} grid gap-px border border-border bg-border lg:grid-cols-[1fr_1.2fr]`}>
         <div className="bg-card">
@@ -117,14 +117,14 @@ const Geography = () => {
             <div>
               <p className="font-head text-4xl font-extrabold tracking-tight text-primary">25+</p>
               <p className="mt-2 text-[0.68rem] uppercase tracking-[0.2em] text-muted-foreground">
-                стран поставки
+                countries served
               </p>
             </div>
             <a
               href="#contacts"
               className="flex items-center gap-2 text-[0.68rem] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-primary"
             >
-              Проверить вашу локацию
+              Check your location
               <Icon name="ArrowRight" size={14} />
             </a>
           </div>

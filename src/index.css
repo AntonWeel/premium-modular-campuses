@@ -162,6 +162,16 @@
     opacity: 1;
     transform: none;
   }
+  .route-line {
+    stroke-dasharray: 3 5;
+    animation: route-dash 1.6s linear infinite;
+  }
+}
+
+@keyframes route-dash {
+  to {
+    stroke-dashoffset: -16;
+  }
 }
 
 @keyframes rise {
