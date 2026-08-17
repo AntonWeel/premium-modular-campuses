@@ -14,6 +14,7 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
       { label: 'Campus M', href: '#solutions' },
       { label: 'Campus L', href: '#solutions' },
       { label: 'Campus XL', href: '#solutions' },
+      { label: 'Layout concepts', href: '#concepts' },
       { label: 'Bespoke project', href: '#contacts' },
     ],
   },

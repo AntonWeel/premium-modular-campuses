@@ -5,9 +5,9 @@ import Icon from '@/components/ui/icon';
 
 const NAV = [
   { label: 'Solutions', href: '#solutions' },
+  { label: 'Concepts', href: '#concepts' },
   { label: 'Advantages', href: '#advantages' },
   { label: 'Production', href: '#production' },
-  { label: 'Process', href: '#process' },
   { label: 'Gallery', href: '#gallery' },
   { label: 'Supply', href: '#supply' },
   { label: 'Contacts', href: '#contacts' },

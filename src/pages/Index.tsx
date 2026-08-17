@@ -2,6 +2,7 @@ import Header from '@/components/site/Header';
 import Hero from '@/components/site/Hero';
 import Advantages from '@/components/site/Advantages';
 import Solutions from '@/components/site/Solutions';
+import ModularConcepts from '@/components/site/ModularConcepts';
 import Process from '@/components/site/Process';
 import Production from '@/components/site/Production';
 import Logistics from '@/components/site/Logistics';
@@ -18,6 +19,7 @@ const Index = () => (
       <Hero />
       <Advantages />
       <Solutions />
+      <ModularConcepts />
       <Process />
       <Production />
       <Logistics />

@@ -4,88 +4,88 @@
 
 @layer base {
   :root {
-    /* --- Living Campus: Arabian sand + graphite (Mercedes tonality) --- */
-    --background: 30 16% 9%; /* deep dune graphite */
-    --foreground: 36 33% 95%; /* warm sand white */
+    /* --- Living Campus: brushed steel + graphite --- */
+    --background: 215 16% 10%; /* deep graphite */
+    --foreground: 210 20% 96%; /* cold steel white */
 
-    --card: 30 15% 13%;
-    --card-foreground: 36 33% 95%;
+    --card: 215 14% 14%;
+    --card-foreground: 210 20% 96%;
 
-    --popover: 30 15% 13%;
-    --popover-foreground: 36 33% 95%;
+    --popover: 215 14% 14%;
+    --popover-foreground: 210 20% 96%;
 
-    --primary: 34 52% 65%; /* Arabian sand */
-    --primary-foreground: 30 30% 10%;
+    --primary: 208 22% 74%; /* brushed steel */
+    --primary-foreground: 215 25% 11%;
 
-    --secondary: 30 15% 13%;
-    --secondary-foreground: 36 33% 95%;
+    --secondary: 215 14% 14%;
+    --secondary-foreground: 210 20% 96%;
 
-    --muted: 30 15% 13%;
-    --muted-foreground: 33 18% 68%; /* soft sand grey */
+    --muted: 215 14% 14%;
+    --muted-foreground: 212 12% 68%;
 
-    --accent: 34 52% 65%;
-    --accent-foreground: 30 30% 10%;
+    --accent: 208 22% 74%;
+    --accent-foreground: 215 25% 11%;
 
-    --destructive: 8 62% 48%;
-    --destructive-foreground: 36 33% 95%;
+    --destructive: 4 60% 50%;
+    --destructive-foreground: 210 20% 96%;
 
-    --border: 30 17% 23%;
-    --input: 30 17% 23%;
-    --ring: 34 52% 65%;
+    --border: 214 14% 25%;
+    --input: 214 14% 25%;
+    --ring: 208 22% 74%;
 
     --radius: 1.5rem;
 
-    --sidebar-background: 30 16% 9%;
-    --sidebar-foreground: 36 33% 95%;
-    --sidebar-primary: 34 52% 65%;
-    --sidebar-primary-foreground: 30 30% 10%;
-    --sidebar-accent: 30 15% 13%;
-    --sidebar-accent-foreground: 36 33% 95%;
-    --sidebar-border: 30 17% 23%;
-    --sidebar-ring: 34 52% 65%;
+    --sidebar-background: 215 16% 10%;
+    --sidebar-foreground: 210 20% 96%;
+    --sidebar-primary: 208 22% 74%;
+    --sidebar-primary-foreground: 215 25% 11%;
+    --sidebar-accent: 215 14% 14%;
+    --sidebar-accent-foreground: 210 20% 96%;
+    --sidebar-border: 214 14% 25%;
+    --sidebar-ring: 208 22% 74%;
 
     /* raw tokens */
-    --hero-bg: #1a1511;
-    --hero-surface: #262019;
-    --hero-text: #f6efe6;
-    --hero-muted: #b9aa96;
-    --hero-accent: #d5ab6f;
-    --hero-accent-contrast: #201a12;
-    --hero-x-photo-veil: #14100c;
-    --hero-x-line: #42372c;
-    --hero-x-sky: #4a3a28;
-    --sand-1: #d8bb8d;
-    --sand-2: #b8935f;
+    --hero-bg: #15181c;
+    --hero-surface: #1f242a;
+    --hero-text: #f2f5f8;
+    --hero-muted: #a4adb8;
+    --hero-accent: #b4c1cd;
+    --hero-accent-contrast: #15191f;
+    --hero-x-photo-veil: #0f1216;
+    --hero-x-line: #363e47;
+    --hero-x-sky: #2a333d;
+    --sand-1: #c3ced9;
+    --sand-2: #7e8b98;
   }
 
   .dark {
-    --background: 30 16% 9%;
-    --foreground: 36 33% 95%;
-    --card: 30 15% 13%;
-    --card-foreground: 36 33% 95%;
-    --popover: 30 15% 13%;
-    --popover-foreground: 36 33% 95%;
-    --primary: 34 52% 65%;
-    --primary-foreground: 30 30% 10%;
-    --secondary: 30 15% 13%;
-    --secondary-foreground: 36 33% 95%;
-    --muted: 30 15% 13%;
-    --muted-foreground: 33 18% 68%;
-    --accent: 34 52% 65%;
-    --accent-foreground: 30 30% 10%;
-    --destructive: 8 62% 48%;
-    --destructive-foreground: 36 33% 95%;
-    --border: 30 17% 23%;
-    --input: 30 17% 23%;
-    --ring: 34 52% 65%;
-    --sidebar-background: 30 16% 9%;
-    --sidebar-foreground: 36 33% 95%;
-    --sidebar-primary: 34 52% 65%;
-    --sidebar-primary-foreground: 30 30% 10%;
-    --sidebar-accent: 30 15% 13%;
-    --sidebar-accent-foreground: 36 33% 95%;
-    --sidebar-border: 30 17% 23%;
-    --sidebar-ring: 34 52% 65%;
+    --background: 215 16% 10%;
+    --foreground: 210 20% 96%;
+    --card: 215 14% 14%;
+    --card-foreground: 210 20% 96%;
+    --popover: 215 14% 14%;
+    --popover-foreground: 210 20% 96%;
+    --primary: 208 22% 74%;
+    --primary-foreground: 215 25% 11%;
+    --secondary: 215 14% 14%;
+    --secondary-foreground: 210 20% 96%;
+    --muted: 215 14% 14%;
+    --muted-foreground: 212 12% 68%;
+    --accent: 208 22% 74%;
+    --accent-foreground: 215 25% 11%;
+    --destructive: 4 60% 50%;
+    --destructive-foreground: 210 20% 96%;
+    --border: 214 14% 25%;
+    --input: 214 14% 25%;
+    --ring: 208 22% 74%;
+    --sidebar-background: 215 16% 10%;
+    --sidebar-foreground: 210 20% 96%;
+    --sidebar-primary: 208 22% 74%;
+    --sidebar-primary-foreground: 215 25% 11%;
+    --sidebar-accent: 215 14% 14%;
+    --sidebar-accent-foreground: 210 20% 96%;
+    --sidebar-border: 214 14% 25%;
+    --sidebar-ring: 208 22% 74%;
   }
 }
 
@@ -99,15 +99,18 @@
     font-family: "Inter", system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     background-image:
-      radial-gradient(
-        120% 70% at 82% -8%,
-        color-mix(in srgb, var(--sand-1) 16%, transparent) 0%,
-        transparent 58%
+      linear-gradient(
+        100deg,
+        transparent 0%,
+        color-mix(in srgb, var(--sand-1) 5%, transparent) 26%,
+        transparent 34%,
+        color-mix(in srgb, var(--sand-1) 4%, transparent) 62%,
+        transparent 74%
       ),
       radial-gradient(
-        100% 60% at 8% 12%,
-        color-mix(in srgb, var(--sand-2) 12%, transparent) 0%,
-        transparent 62%
+        120% 70% at 82% -8%,
+        color-mix(in srgb, var(--sand-1) 12%, transparent) 0%,
+        transparent 58%
       ),
       radial-gradient(
         140% 80% at 50% 108%,
@@ -165,14 +168,20 @@
 
   .dune-field {
     background-image:
+      repeating-linear-gradient(
+        104deg,
+        color-mix(in srgb, var(--sand-1) 4%, transparent) 0px,
+        transparent 2px,
+        transparent 7px
+      ),
       radial-gradient(
         90% 55% at 20% 100%,
-        color-mix(in srgb, var(--sand-2) 22%, transparent) 0%,
+        color-mix(in srgb, var(--sand-2) 20%, transparent) 0%,
         transparent 70%
       ),
       radial-gradient(
         80% 50% at 85% 96%,
-        color-mix(in srgb, var(--sand-1) 18%, transparent) 0%,
+        color-mix(in srgb, var(--sand-1) 12%, transparent) 0%,
         transparent 72%
       );
   }
@@ -181,9 +190,10 @@
     @apply rounded-[2rem] border border-border/80;
     background:
       linear-gradient(
-        160deg,
-        color-mix(in srgb, var(--sand-1) 7%, transparent) 0%,
-        transparent 55%
+        150deg,
+        color-mix(in srgb, var(--sand-1) 9%, transparent) 0%,
+        transparent 46%,
+        color-mix(in srgb, var(--sand-2) 6%, transparent) 100%
       ),
       hsl(var(--card));
   }
