@@ -33,10 +33,13 @@ const EMPTY: FormState = {
   message: '',
 };
 
+const QUOTE_URL = 'https://functions.poehali.dev/e6db1ab9-749b-4340-88f9-a8142e78a097';
+
 const Contacts = () => {
   const [form, setForm] = useState<FormState>(EMPTY);
   const [errors, setErrors] = useState<Partial<Record<keyof FormState, string>>>({});
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
   const { ref, className } = useReveal<HTMLDivElement>();
   const { toast } = useToast();
 
@@ -57,7 +60,7 @@ const Contacts = () => {
     return Object.keys(next).length === 0;
   };
 
-  const onSubmit = (e: FormEvent) => {
+  const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!validate()) {
       toast({
@@ -66,11 +69,29 @@ const Contacts = () => {
       });
       return;
     }
-    setSent(true);
-    toast({
-      title: 'Request received',
-      description: 'An engineer will contact you within one business day.',
-    });
+
+    setLoading(true);
+    try {
+      const res = await fetch(QUOTE_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error('request failed');
+      setSent(true);
+      toast({
+        title: 'Request received',
+        description: 'An engineer will contact you within one business day.',
+      });
+    } catch {
+      toast({
+        title: 'Could not send the request',
+        description: 'Please try again or write to info@livingcampus.com.',
+        variant: 'destructive',
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   const fieldCls = (key: keyof FormState) =>
@@ -230,7 +251,9 @@ const Contacts = () => {
                 />
 
                 <div className="flex flex-wrap items-center gap-5 pt-2">
-                  <GoldButton type="submit">Request a quote</GoldButton>
+                  <GoldButton type="submit" disabled={loading}>
+                    {loading ? 'Sending…' : 'Request a quote'}
+                  </GoldButton>
                   <span className="text-xs text-muted-foreground">
                     Reply within 3 working days. We never share your data with third parties.
                   </span>

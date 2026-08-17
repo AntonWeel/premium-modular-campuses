@@ -9,6 +9,7 @@ interface GoldButtonProps {
   className?: string;
   onClick?: () => void;
   type?: 'button' | 'submit';
+  disabled?: boolean;
 }
 
 const GoldButton = ({
@@ -19,6 +20,7 @@ const GoldButton = ({
   className = '',
   onClick,
   type = 'button',
+  disabled,
 }: GoldButtonProps) => {
   const base = `inline-flex items-center justify-center gap-3 rounded-sm font-semibold uppercase tracking-[0.14em] transition-all duration-300 hover:-translate-y-px ${
     small ? 'px-[18px] py-[11px] text-[0.7rem]' : 'px-[22px] py-[14px] text-[0.78rem]'
@@ -26,7 +28,7 @@ const GoldButton = ({
     ghost
       ? 'border border-border bg-transparent text-foreground hover:border-primary hover:text-primary'
       : 'border border-primary bg-primary text-primary-foreground hover:bg-primary/85'
-  } ${className}`;
+  } ${disabled ? 'pointer-events-none opacity-60' : ''} ${className}`;
 
   const content = (
     <>
@@ -43,7 +45,7 @@ const GoldButton = ({
     );
   }
   return (
-    <button type={type} className={base} onClick={onClick}>
+    <button type={type} className={base} onClick={onClick} disabled={disabled}>
       {content}
     </button>
   );
