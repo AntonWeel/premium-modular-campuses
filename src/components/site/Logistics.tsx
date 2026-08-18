@@ -17,8 +17,8 @@ const SHOTS = [
     alt: 'Modules in transport frames',
   },
   {
-    src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/a9818d88-c76e-4490-976a-91636a9633ad.jpg',
-    alt: 'Loading at a sea port',
+    src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/1e9898c9-cf31-459d-9ffd-ba3fea4c8a2e.jpg',
+    alt: 'Transpacks loaded at a sea port',
   },
   {
     src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/3a7048c3-597c-43b2-a5e3-09435c35dced.jpg',
