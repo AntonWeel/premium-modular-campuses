@@ -15,9 +15,9 @@ const Hero = () => (
   >
     <div className="absolute inset-0">
       <img
-        src="https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/71e469f9-464f-4d69-b40e-f1c9208bfaa2.jpg"
-        alt="500-bed modular camp lit up at dusk"
-        className="h-full w-full animate-hero-zoom object-cover object-[50%_42%]"
+        src="https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/bucket/7aadcc15-e20b-48e0-86fe-8edaca0e1e75.jpeg"
+        alt="Aerial view of a modular residential campus"
+        className="h-full w-full animate-hero-zoom object-cover object-[58%_50%] [filter:saturate(0.55)_contrast(1.05)_brightness(0.82)]"
       />
     </div>
     <div className="hero-veil absolute inset-0" />
