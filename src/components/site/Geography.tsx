@@ -94,6 +94,13 @@ const Geography = () => {
         </div>
 
         <div className="dune-field relative min-h-[340px] overflow-hidden rounded-[2rem] border border-white/[0.08] p-8 lg:min-h-[460px]">
+          <img
+            src="https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/bucket/7aadcc15-e20b-48e0-86fe-8edaca0e1e75.jpeg"
+            alt=""
+            aria-hidden
+            className="absolute inset-0 h-full w-full object-cover opacity-[0.16] [filter:saturate(0.35)_contrast(1.05)]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-background/40 to-background/85" />
           <div
             className="absolute inset-0 opacity-[0.14]"
             style={{
