@@ -38,6 +38,12 @@ const ITEMS = [
     src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/files/71e469f9-464f-4d69-b40e-f1c9208bfaa2.jpg',
   },
   {
+    cat: 'Living',
+    title: 'Modular campus, aerial view',
+    text: 'Twenty residential blocks, parking, sports pitch and full site infrastructure.',
+    src: 'https://cdn.poehali.dev/projects/8307f028-03f1-4f3f-9486-4ee7a5ad6e3f/bucket/7aadcc15-e20b-48e0-86fe-8edaca0e1e75.jpeg',
+  },
+  {
     cat: 'Sport',
     title: 'Outdoor facilities',
     text: 'Football pitch, calisthenics area and walking routes across the camp.',
