@@ -63,7 +63,7 @@ const Logistics = () => {
           {SHOTS.map((s) => (
             <div
               key={s.src}
-              className="group relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-border bg-background"
+              className="group relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-white/[0.08] shadow-[0_24px_50px_-30px_rgba(0,0,0,0.7)]"
             >
               <img
                 src={s.src}

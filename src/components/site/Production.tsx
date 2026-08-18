@@ -64,7 +64,7 @@ const Production = () => {
               key={c.title}
               type="button"
               onClick={() => setOpen(i)}
-              className="group relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-border bg-background text-left transition-colors duration-300 hover:border-primary/50"
+              className="group relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/[0.08] text-left shadow-[0_24px_50px_-30px_rgba(0,0,0,0.7)] transition-colors duration-300 hover:border-primary/40"
             >
               <img
                 src={c.image}

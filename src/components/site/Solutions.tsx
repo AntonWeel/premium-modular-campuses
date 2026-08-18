@@ -100,7 +100,7 @@ const Solutions = () => {
         </div>
 
         <div className="grid gap-5 lg:grid-cols-[1.35fr_1fr]">
-          <div className="relative min-h-[320px] overflow-hidden rounded-[2rem] border border-border bg-background lg:min-h-[480px]">
+          <div className="relative min-h-[320px] overflow-hidden rounded-[2rem] border border-white/[0.08] shadow-[0_24px_50px_-30px_rgba(0,0,0,0.7)] lg:min-h-[480px]">
             {CAMPUSES.map((c, i) => (
               <img
                 key={c.key}

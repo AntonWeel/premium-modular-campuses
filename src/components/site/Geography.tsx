@@ -93,7 +93,7 @@ const Geography = () => {
           ))}
         </div>
 
-        <div className="dune-field relative min-h-[340px] overflow-hidden rounded-[2rem] border border-border bg-background p-8 lg:min-h-[460px]">
+        <div className="dune-field relative min-h-[340px] overflow-hidden rounded-[2rem] border border-white/[0.08] p-8 lg:min-h-[460px]">
           <div
             className="absolute inset-0 opacity-[0.14]"
             style={{

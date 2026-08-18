@@ -89,7 +89,7 @@ const Gallery = () => {
             key={item.title + item.src}
             type="button"
             onClick={() => setOpen(ITEMS.indexOf(item))}
-            className="group relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-border bg-background text-left transition-colors duration-300 hover:border-primary/50"
+            className="group relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-white/[0.08] text-left shadow-[0_24px_50px_-30px_rgba(0,0,0,0.7)] transition-colors duration-300 hover:border-primary/40"
           >
             <img
               src={item.src}

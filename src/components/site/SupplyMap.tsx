@@ -282,7 +282,7 @@ const SupplyMap = () => {
         </div>
 
         <div className="grid gap-5">
-          <div className="dune-field relative overflow-hidden rounded-[2rem] border border-border bg-background">
+          <div className="dune-field relative overflow-hidden rounded-[2rem] border border-white/[0.08]">
             <div className="relative w-full pt-[42%]">
               <div className="absolute inset-0">
                 <div

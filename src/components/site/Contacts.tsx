@@ -143,7 +143,7 @@ const Contacts = () => {
             </div>
           </div>
 
-          <div className="rounded-[2.5rem] border border-border bg-card/85 p-8 backdrop-blur-sm lg:p-10">
+          <div className="glass-panel rounded-[2.5rem] p-8 lg:p-10">
             {sent ? (
               <div className="flex min-h-[420px] flex-col items-start justify-center">
                 <span className="flex h-14 w-14 items-center justify-center rounded-full border border-primary text-primary">

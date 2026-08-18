@@ -178,7 +178,7 @@ const ModularConcepts = () => {
         </div>
 
         <div className="grid gap-5 lg:grid-cols-[1.15fr_1fr]">
-          <div className="dune-field flex flex-col justify-between rounded-[2rem] border border-border bg-background p-8 lg:p-10">
+          <div className="dune-field flex flex-col justify-between rounded-[2rem] border border-white/[0.08] p-8 lg:p-10">
             <div className="flex items-start justify-between gap-6">
               <div>
                 <p className="font-head text-[0.7rem] uppercase tracking-[0.3em] text-primary">
